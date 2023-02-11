@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #r1,#r2,#r3,#r4,#r5,#r6,#r7,#r8{
+                width: 100%;
+                height: auto;
+            }
+            #r1 div{
+                outline: auto;height: 200px;width: 200px;float:left;
+            }
+            #r2 div{
+               outline: auto; height: 200px;width: 200px;float:left;
+            }
+            #r3 div{
+                height: 200px;outline: auto; width: 200px;float:left;
+            }
+            #r4 div{
+                height: 200px;width: 200px;outline: auto; float:left;
+            }
+            #r5 div{
+                height: 200px;width: 200px;float:left;outline: auto;
+            }
+            #r6 div{
+                height: 200px;width: 200px;float:left;outline: auto;
+            }
+            #r7 div{
+                height: 200px;width: 200px;float:left;outline: auto;
+            }
+            #r8 div{
+                height: 200px;width: 200px;float:left;outline: auto;
+            }
+            #r1 div:hover{
+                background-color: blue;
+                transition: 1s;
+                position: relative;
+                box-shadow: 2px 3px 5px red;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                     -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r2 div:hover{
+                background-color: red;
+                transition: 1s;
+                position: relative;
+                box-shadow: 2px 3px 5px blue;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r3 div:hover{
+                background-color: green;
+                transition: 1s;
+                position: relative;
+                box-shadow: 2px 3px 5px blue;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r4 div:hover{
+                background-color: greenyellow;
+                transition: 1s;
+                box-shadow: 2px 3px 5px blue;
+                position: relative;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r5 div:hover{
+                background-color: rebeccapurple;
+                transition: 1s;
+                position: relative;
+                box-shadow: 2px 3px 5px blue;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r6 div:hover{
+                background-color: violet;
+                transition: 1s;
+                position: relative;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+                    box-shadow: 2px 3px 5px blue;
+            }
+            #r7 div:hover{
+                background-color: aqua;
+                transition: 1s;
+                box-shadow: 2px 3px 5px blue;
+                position: relative;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r8 div:hover{
+                background-color: orangered;
+                transition: 1s;
+                box-shadow: 2px 3px 5px blue;
+                position: relative;
+                -webkit-transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                        transform: scale(1.5);
+            }
+            #r1 #r1c8,#r2 #r2c8,#r3 #r3c8,#r4 #r4c8,#r5 #r5c8,#r6 #r6c8,#r7 #r7c8,#r8 #r8c8{
+                float: inherit;
+            }
+            #r1c1,#r1c3,#r1c5,#r1c7,#r2c2,#r2c4,#r2c6,#r2c8,#r3c1,#r3c3,#r3c5,#r3c7,#r4c2,#r4c4,#r4c6,#r4c8,#r5c1,#r5c3,#r5c5,#r5c7,#r6c2,#r6c4,#r6c6,#r6c8,#r7c1,
+            #r7c3,#r7c5,#r7c7,#r8c2,#r8c4,#r8c6,#r8c8{
+                background-color: black;
+            }
+            #r1c2,#r1c4,#r1c6,#r1c8,#r2c1,#r2c3,#r2c5,#r2c7,#r3c2,#r3c4,#r3c6,#r3c8,#r4c1,#r4c3,#r4c5,#r4c7,#r5c2,#r5c4,#r5c6,
+            #r5c8,#r6c1,#r6c3,#r6c5,#r6c7,#r7c2,#r7c4,#r7c6,#r7c8,#r8c1,#r8c3,#r8c5,#r8c7{
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="r1">
+            <div id="r1c1"></div>
+            <div id="r1c2"></div>
+            <div id="r1c3"></div>
+            <div id="r1c4"></div>
+            <div id="r1c5"></div>
+            <div id="r1c6"></div>
+            <div id="r1c7"></div>
+            <div id="r1c8"></div>
+        </div>
+        <div id="r2">
+            <div id="r2c1"></div>
+            <div id="r2c2"></div>
+            <div id="r2c3"></div>
+            <div id="r2c4"></div>
+            <div id="r2c5"></div>
+            <div id="r2c6"></div>
+            <div id="r2c7"></div>
+            <div id="r2c8"></div>
+        </div>
+        <div id="r3">
+            <div id="r3c1"></div>
+            <div id="r3c2"></div>
+            <div id="r3c3"></div>
+            <div id="r3c4"></div>
+            <div id="r3c5"></div>
+            <div id="r3c6"></div>
+            <div id="r3c7"></div>
+            <div id="r3c8"></div>
+        </div>
+        <div id="r4">
+            <div id="r4c1"></div>
+            <div id="r4c2"></div>
+            <div id="r4c3"></div>
+            <div id="r4c4"></div>
+            <div id="r4c5"></div>
+            <div id="r4c6"></div>
+            <div id="r4c7"></div>
+            <div id="r4c8"></div>
+        </div>
+        <div id="r5">
+            <div id="r5c1"></div>
+            <div id="r5c2"></div>
+            <div id="r5c3"></div>
+            <div id="r5c4"></div>
+            <div id="r5c5"></div>
+            <div id="r5c6"></div>
+            <div id="r5c7"></div>
+            <div id="r5c8"></div>
+        </div>
+        <div id="r6">
+            <div id="r6c1"></div>
+            <div id="r6c2"></div>
+            <div id="r6c3"></div>
+            <div id="r6c4"></div>
+            <div id="r6c5"></div>
+            <div id="r6c6"></div>
+            <div id="r6c7"></div>
+            <div id="r6c8"></div>
+        </div>
+        <div id="r7">
+            <div id="r7c1"></div>
+            <div id="r7c2"></div>
+            <div id="r7c3"></div>
+            <div id="r7c4"></div>
+            <div id="r7c5"></div>
+            <div id="r7c6"></div>
+            <div id="r7c7"></div>
+            <div id="r7c8"></div>
+        </div>
+        <div id="r8">
+            <div id="r8c1"></div>
+            <div id="r8c2"></div>
+            <div id="r8c3"></div>
+            <div id="r8c4"></div>
+            <div id="r8c5"></div>
+            <div id="r8c6"></div>
+            <div id="r8c7"></div>
+            <div id="r8c8"></div>
+        </div>
+    </body>
+</html>
